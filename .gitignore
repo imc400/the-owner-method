@@ -1,0 +1,16 @@
+# Videos (demasiado grandes para GitHub)
+*.MOV
+*.mov
+*.mp4
+*.MP4
+
+# Capturas de pantalla
+*.png
+!Logo.png
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
