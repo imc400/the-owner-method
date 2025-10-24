@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/thank-you-page",
+      "destination": "/thank-you-page.html"
+    }
+  ],
+  "cleanUrls": true
+}
