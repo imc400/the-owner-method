@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agenda tu llamada estratégica con The Owner Method. Transforma tu negocio en 30 minutos.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Agenda tu llamada - The Owner Method">
+    <meta property="og:description" content="Reserva tu sesión estratégica y descubre cómo llevar tu negocio al siguiente nivel.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.theownermethod.io/agendar">
+
+    <title>Agenda tu llamada - The Owner Method</title>
+
+    <!-- Calendly CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 50%, #fff5ee 100%);
+            color: #1a1a1a;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header con Logo */
+        .header {
+            text-align: center;
+            padding: 20px 0 40px;
+        }
+
+        .logo {
+            display: inline-block;
+            background: #1a1a1a;
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+
+        .logo-text .t { color: #D4874B; }
+        .logo-text .he { color: #fff; }
+        .logo-text .o { color: #D4874B; }
+        .logo-text .wner { color: #fff; }
+        .logo-text .m { color: #D4874B; }
+        .logo-text .ethod { color: #fff; }
+
+        .header h1 {
+            font-size: 42px;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .header p {
+            font-size: 20px;
+            color: #666;
+            font-weight: 500;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Calendly Container */
+        .calendly-container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+
+        .calendly-inline-widget {
+            min-width: 100%;
+            height: 700px;
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .loading::after {
+            content: '...';
+            animation: dots 1.5s steps(4, end) infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+
+        /* Info Section */
+        .info-section {
+            max-width: 700px;
+            margin: 40px auto 20px;
+            text-align: center;
+        }
+
+        .info-item {
+            display: inline-flex;
+            align-items: center;
+            margin: 10px 20px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .info-item .icon {
+            width: 24px;
+            height: 24px;
+            background: #D4874B;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .header p {
+                font-size: 18px;
+            }
+
+            .logo-text {
+                font-size: 24px;
+            }
+
+            .logo {
+                padding: 18px 35px;
+            }
+
+            .calendly-inline-widget {
+                height: 800px;
+            }
+
+            .info-item {
+                display: block;
+                margin: 15px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .header p {
+                font-size: 16px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .logo {
+                padding: 15px 30px;
+            }
+
+            .calendly-inline-widget {
+                height: 900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <div class="logo-text">
+                    <span class="t">T</span><span class="he">HE</span><br>
+                    <span class="o">O</span><span class="wner">WNER</span><br>
+                    <span class="m">M</span><span class="ethod">ETHOD</span>
+                </div>
+            </div>
+
+            <h1>Agenda tu llamada estratégica</h1>
+            <p>Selecciona el día y hora que mejor te funcione. Te contactaremos con todos los detalles.</p>
+        </div>
+
+        <!-- Info Items -->
+        <div class="info-section">
+            <div class="info-item">
+                <div class="icon">⏱</div>
+                <span>30 minutos</span>
+            </div>
+            <div class="info-item">
+                <div class="icon">📹</div>
+                <span>Google Meet</span>
+            </div>
+            <div class="info-item">
+                <div class="icon">🎯</div>
+                <span>Llamada estratégica</span>
+            </div>
+        </div>
+
+        <!-- Calendly Embed -->
+        <div class="calendly-container">
+            <div class="loading">Cargando calendario</div>
+            <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/theownermethod-info/30min?hide_gdpr_banner=1&primary_color=d4874b"
+                style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendly JavaScript -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <script>
+        // Función para manejar el evento de agendamiento exitoso
+        function isCalendlyEvent(e) {
+            return e.origin === "https://calendly.com" && e.data.event && e.data.event.indexOf('calendly') === 0;
+        }
+
+        // Escuchar eventos de Calendly
+        window.addEventListener('message', function(e) {
+            if (isCalendlyEvent(e)) {
+                // Log del evento para debugging (puedes comentar esta línea en producción)
+                console.log('Calendly Event:', e.data.event);
+
+                // Cuando se agenda exitosamente, redirigir a thank-you-page
+                if (e.data.event === 'calendly.event_scheduled') {
+                    console.log('Evento agendado exitosamente, redirigiendo...');
+
+                    // Pequeño delay para asegurar que el usuario vea la confirmación de Calendly
+                    setTimeout(function() {
+                        window.location.href = '/thank-you-page';
+                    }, 1500);
+                }
+            }
+        });
+
+        // Ocultar loading y mostrar Calendly cuando cargue
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.loading').style.display = 'none';
+                document.querySelector('.calendly-inline-widget').style.display = 'block';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

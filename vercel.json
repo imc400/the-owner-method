@@ -3,6 +3,10 @@
     {
       "source": "/thank-you-page",
       "destination": "/thank-you-page.html"
+    },
+    {
+      "source": "/agendar",
+      "destination": "/agendar.html"
     }
   ],
   "cleanUrls": true
